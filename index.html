@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Example</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #007BFF;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.cancel {
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.submit:hover {
+    background-color: #020e25;
+}
+
+.cancel:hover {
+    background-color: #7c7c7c;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="number">Number</label>
+            <input type="tel" id="number" name="number" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div class="button-group">
+                <button type="submit" class="submit">SUBMIT</button>
+                <button type="button" class="cancel">CANCEL</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
